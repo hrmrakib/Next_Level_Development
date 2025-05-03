@@ -17,5 +17,26 @@
             name: "Kawsar",
             age: 23
         }
+    ];
+
+    type GenericTuple<X, Y> = [X, Y];
+    
+    const friends:GenericTuple<string, string> = ["Rakib", "Jahid"];
+
+    const ourAges: GenericTuple<number, number> = [24, 25.6];
+
+    const userWithID: GenericTuple<number, {name:string, age: number}> = [10124,  {
+        name: "Faysal",
+        age: 23
+    }]
+
+    type User = {name: string, age: number};
+
+    const user2: GenericArray<User> = [
+        {
+            name: "Rubel",
+            age: 29
+        }
     ]
+
 }
