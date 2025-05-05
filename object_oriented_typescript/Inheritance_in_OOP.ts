@@ -28,8 +28,11 @@
   }
 
   class Programmer extends Person{
+    domain: string;
+
     constructor(name: string, age: number, address: string, domain: string) {
         super(name, age, address);
+        this.domain = domain;
     }
 
     problemSolving() {
